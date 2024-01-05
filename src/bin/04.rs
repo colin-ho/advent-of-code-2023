@@ -1,7 +1,7 @@
 advent_of_code::solution!(4);
 
 pub fn part_one(input: &str) -> Option<u32> {
-    let res = input.lines().fold(0, |acc, line| {
+    input.lines().fold(0, |acc, line| {
         let (_, nums) = line.split_once(": ").unwrap();
         let (winning_str, mine_str) = nums.split_once(" | ").unwrap();
 
@@ -27,8 +27,7 @@ pub fn part_one(input: &str) -> Option<u32> {
         } else {
             acc
         }
-    });
-    Some(res)
+    }).try_into().ok()
 }
 
 pub fn part_two(input: &str) -> Option<u32> {
