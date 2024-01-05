@@ -61,6 +61,8 @@ pub fn download(day: Day) -> Result<Output, AocCommandError> {
             input_path.to_string(),
             "--puzzle-file".into(),
             puzzle_path.to_string(),
+            "--session-file".into(),
+            ".adventofcode.session".into(),
         ],
         day,
     );
