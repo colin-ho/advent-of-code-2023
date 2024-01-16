@@ -2,7 +2,9 @@
 
 # 🎄 Advent of Code 2023
 
-Solutions for [Advent of Code](https://adventofcode.com/) in [Rust](https://www.rust-lang.org/).
+My solutions for [Advent of Code](https://adventofcode.com/) in [Rust](https://www.rust-lang.org/). First year completing all 25 days of AOC, albeit a bit late and with some help from Reddit and Youtube 🙃. Learned a lot about Rust, Shoelace/Picks theorem, MinCut, LCM applications, and more.
+
+Template provided by https://github.com/fspoettel/advent-of-code-rust. 
 
 <!--- advent_readme_stars table --->
 ## 2023 Results
