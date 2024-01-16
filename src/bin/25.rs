@@ -33,10 +33,12 @@ pub fn part_one(input: &str) -> Option<u32> {
         .unwrap();
 
     assert_eq!(min_cut_weight, 3);
-    ((total - min_cut_set.len()) * min_cut_set.len()).try_into().ok()
+    ((total - min_cut_set.len()) * min_cut_set.len())
+        .try_into()
+        .ok()
 }
 
-pub fn part_two(input: &str) -> Option<u32> {
+pub fn part_two(_input: &str) -> Option<u32> {
     None
 }
 

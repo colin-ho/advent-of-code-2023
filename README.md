@@ -41,9 +41,33 @@ Solutions for [Advent of Code](https://adventofcode.com/) in [Rust](https://www.
 
 | Day | Part 1 | Part 2 |
 | :---: | :---: | :---:  |
-| [Day 1](./src/bin/01.rs) | `35.3µs` | `111.8µs` |
+| [Day 1](./src/bin/01.rs) | `34.7µs` | `111.6µs` |
+| [Day 2](./src/bin/02.rs) | `38.9µs` | `43.1µs` |
+| [Day 3](./src/bin/03.rs) | `113.9µs` | `115.1µs` |
+| [Day 4](./src/bin/04.rs) | `117.4µs` | `113.0µs` |
+| [Day 5](./src/bin/05.rs) | `20.3µs` | `24.1µs` |
+| [Day 6](./src/bin/06.rs) | `191.0ns` | `286.0ns` |
+| [Day 7](./src/bin/07.rs) | `123.3µs` | `122.1µs` |
+| [Day 8](./src/bin/08.rs) | `423.5µs` | `2.9ms` |
+| [Day 9](./src/bin/09.rs) | `230.4µs` | `224.0µs` |
+| [Day 10](./src/bin/10.rs) | `788.6µs` | `1.3ms` |
+| [Day 11](./src/bin/11.rs) | `636.8µs` | `638.4µs` |
+| [Day 12](./src/bin/12.rs) | `397.7µs` | `1.2ms` |
+| [Day 13](./src/bin/13.rs) | `207.5µs` | `199.7µs` |
+| [Day 14](./src/bin/14.rs) | `24.9µs` | `18.1ms` |
+| [Day 15](./src/bin/15.rs) | `65.0µs` | `234.9µs` |
+| [Day 16](./src/bin/16.rs) | `1.3ms` | `43.4ms` |
+| [Day 17](./src/bin/17.rs) | `38.5ms` | `62.5ms` |
+| [Day 18](./src/bin/18.rs) | `35.5µs` | `53.0µs` |
+| [Day 19](./src/bin/19.rs) | `418.8µs` | `590.9µs` |
+| [Day 20](./src/bin/20.rs) | `12.6ms` | `52.5ms` |
+| [Day 21](./src/bin/21.rs) | `7.6ms` | `22.3ms` |
+| [Day 22](./src/bin/22.rs) | `1.3ms` | `11.9ms` |
+| [Day 23](./src/bin/23.rs) | `3.7ms` | `1.1s` |
+| [Day 24](./src/bin/24.rs) | `388.6µs` | `47.7µs` |
+| [Day 25](./src/bin/25.rs) | `336.0ms` | `-` |
 
-**Total: 0.15ms**
+**Total: 1723.68ms**
 <!--- benchmarking table --->
 
 ---
@@ -64,7 +88,7 @@ cargo solve <day>
 # Part 2: 42 (41.0ns)
 ```
 
-The `solve` command runs your solution against real puzzle inputs. To run an optimized build of your code, append the `--release` flag as with any other rust program.
+The `solve` command runs the solution against real puzzle inputs. To run an optimized build, append the `--release` flag as with any other rust program.
 
 ### ➡️ Run all solutions
 
@@ -84,7 +108,7 @@ cargo all
 
 This runs all solutions sequentially and prints output to the command-line. Same as for the `solve` command, the `--release` flag runs an optimized build.
 
-### ➡️ Benchmark your solutions
+### ➡️ Benchmark solutions
 
 ```sh
 # example: `cargo time 8 --store`
@@ -101,7 +125,7 @@ cargo time <day> [--all] [--store]
 # Stored updated benchmarks.
 ```
 
-The `cargo time` command allows you to benchmark your code and store timings in the readme. When benching, the runner will run your code between `10` and `10.000` times, depending on execution time of first execution, and print the average execution time.
+The `cargo time` command allows you to benchmark and store timings in the readme. When benching, the runner will run the code between `10` and `10.000` times, depending on execution time of first execution, and print the average execution time.
 
 `cargo time` has three modes of execution:
 

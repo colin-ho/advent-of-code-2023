@@ -6,7 +6,7 @@ fn quatratic_formula(time: u64, distance: u64) -> u64 {
     // distance = time * x - x^2
     // x^2 - time * x + distance = 0
     // x = (time +- sqrt(time^2 - 4 * distance)) / 2
-    
+
     let a = ((time * time - 4 * distance) as f32).sqrt();
     let x1 = ((time as f32 - a) / 2.0 + 1.0).floor();
     let x2 = ((time as f32 + a) / 2.0 - 1.0).ceil();
